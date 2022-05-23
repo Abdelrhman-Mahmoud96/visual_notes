@@ -1,0 +1,143 @@
+{
+    "@@locale": "en",
+    "notesAppBarTitle": "Visual Notes",
+    "@notesAppBarTitle": {
+        "description": "Text shown in the AppBar of the Home Page"
+    },
+
+    "noteFilterTooltip": "Filter",
+    "@noteFilterTooltip": {
+        "description": "Tooltip shown in filter dropdown of the home page"
+    },
+
+    "noteFilterAll" : "All",
+    "@nteFilterAll" : {
+        "description": "Text shown in the filter dropdown in the home page for the option to display all notes"
+    },
+
+    "noteFilterOpenOnly" : "Open Only",
+        "@noteFilterOpenOnly" : {
+            "description": "Text shown in the filter dropdown in the home page for the option to display open only notes"
+        },
+
+    "noteFilterClosedOnly" : "Closed Only",
+        "@noteFilterClosedOnly" : {
+            "description": "Text shown in the filter dropdown in the home page for the option to display closed only notes"
+        },
+
+    "notesHomePageEmptyList" : "No notes found with the selected filter",
+        "@notesHomePageEmptyList" : {
+            "description": "Text shown in the home page when there are no notes for the selected filter"
+        },
+
+    "notesHomePageNoteDeletedSnackbar" : "Note \"{noteTitle}\" deleted",
+        "@notesHomePageNoteDeletedSnackbar" : {
+            "description": "Text shown in the filter dropdown in the home page for the option to display all notes",
+             "placeholders" :{
+                "noteTitle" :{
+                    "description" : "the title for the deleted note"
+                     }
+                  }
+               },
+
+    "notesHomePageUndoDeletion" : "Undo",
+        "@notesHomePageUndoDeletion" : {
+            "description": "Text shown in home page in the snackbar to undo the deletion of the note"
+        },
+
+    "notesHomePageErrorSnackbarText": "An error occurred while loading notes.",
+    "@notesHomePageErrorSnackbarText": {
+      "description": "Snackbar text shown when an error occurs while loading notes"
+    },
+
+    "notesDetailsAppBarTitle": "Notes Details",
+    "@notesDetailsAppBarTitle": {
+      "description": "Title text shown in the AppBar of the Note Details Page"
+    },
+
+    "noteDetailsDeleteButtonTooltip": "Delete",
+    "@noteDetailsDeleteButtonTooltip": {
+      "description": "Tooltip text shown in the delete button on the Note Details Page"
+    },
+
+    "noteDetailsEditButtonTooltip": "Edit",
+    "@noteDetailsEditButtonTooltip": {
+      "description": "Tooltip text shown in the edit button on the Note Details Page"
+    },
+
+    "saveNoteEditAppBarTitle": "Edit Note",
+    "@saveNoteEditAppBarTitle": {
+      "description": "Title text shown in the AppBar of the Note Edit Page when editing an existing note"
+    },
+
+    "saveNoteAddAppBarTitle": "Add Note",
+    "@saveNoteAddAppBarTitle": {
+      "description": "Title text shown in the AppBar of the Note Edit Page when adding a new note"
+    },
+
+    "saveNoteTitleLabel": "Title",
+    "@saveNoteTitleLabel": {
+      "description": "Label text shown in the title input field of the Note Edit Page"
+    },
+
+    "saveNoteDescriptionLabel": "Description",
+    "@saveNoteDescriptionLabel": {
+      "description": "Label text shown in the description input field of the Note Edit Page"
+    },
+
+    "saveNoteSaveButtonTooltip": "Save changes",
+          "@saveNoteSaveButtonTooltip": {
+            "description": "Tooltip text shown in the save button on the Note Save Page"
+          },
+
+    "saveNoteDialogTitle": "Cancel?",
+                        "@saveNoteSaveButtonTooltip": {
+                          "description": "Alert dialog title text shown in the Note Save Page"
+                        },
+
+    "saveNoteDialogCancelAdding": "you did not finish your note are you sure ?",
+                    "@saveNoteDialogCancelAdding": {
+                      "description": "Alert dialog content text shown in the Note Save Page"
+                    },
+
+    "saveNoteDialogCancelEditing": "you did not finish editing your note are you sure ?",
+                "@saveNoteDialogCancelEditing": {
+                  "description": "Alert dialog content text shown in the Note Save Page"
+                },
+
+    "saveNoteDialogYesButton": "Yes",
+                    "@saveNoteDialogYesButton": {
+                      "description": "Alert dialog button text shown in the Note Save Page"
+                    },
+
+    "saveNoteDialogNoButton": "No",
+                    "@saveNoteDialogNoButton": {
+                      "description": "Alert dialog button text shown in the Note Save Page"
+                    },
+
+    "saveNoteImageDialogTitle": "Pick Image Source",
+                        "@saveNoteImageDialogTitle": {
+                          "description": "Alert dialog title text shown in the Note Save Page when pressing the image picker button"
+                        },
+
+    "saveNoteImageDialogCamera": "Camera",
+                        "@saveNoteImageDialogCamera": {
+                          "description": "Alert dialog option text shown in the Note Save Page when pressing the image picker button"
+                        },
+
+    "saveNoteImageDialogGallery": "Gallery",
+                        "@saveNoteImageDialogGallery": {
+                          "description": "Alert dialog option text shown in the Note Save Page when pressing the image picker button"
+                        },
+
+    "saveNoteImagePickerLabel": "Pick Image",
+                            "@saveNoteImagePickerLabel": {
+                              "description": "image picker field label text shown in the Note Save Page"
+                            },
+
+    "saveNoteFormNotValid": "non of the fields should be empty",
+                                "@saveNoteFormNotValid": {
+                                  "description": "snack bar message when one of the form field or all not valid"
+                                }
+
+}

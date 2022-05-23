@@ -1,0 +1,61 @@
+name: visual_notes
+description: A Very Good Project created by Very Good CLI.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+
+dependencies:
+  equatable: ^2.0.0
+  floor: ^1.2.0
+  flutter_form_builder: ^7.1.1
+  flutter_services_binding: ^0.1.0
+  form_builder_image_picker: ^2.0.0
+  form_builder_validators: ^8.1.1
+  image_picker: ^0.8.5
+  path: ^1.8.0
+  sqflite: ^2.0.2
+  json_annotation: ^4.4.0
+  rxdart: ^0.27.2
+  uuid: ^3.0.4
+  freezed_annotation:
+  bloc: ^8.0.3
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.0.1
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
+  injectable: ^1.5.0
+  get_it: ^7.2.0
+
+dev_dependencies:
+  bloc_test: ^9.0.3
+  build_runner: ^2.1.2
+  freezed:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^0.3.0
+  very_good_analysis: ^2.4.0
+  json_serializable:
+  floor_generator: ^1.2.0
+  injectable_generator: ^1.5.0
+
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/
+
+  fonts:
+    - family: Manrope
+      fonts:
+        - asset: fonts/Manrope-Bold.ttf
+        - asset: fonts/Manrope-ExtraBold.ttf
+        - asset: fonts/Manrope-ExtraLight.ttf
+        - asset: fonts/Manrope-Light.ttf
+        - asset: fonts/Manrope-Medium.ttf
+        - asset: fonts/Manrope-Regular.ttf
+        - asset: fonts/Manrope-SemiBold.ttf
