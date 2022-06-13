@@ -1,6 +1,7 @@
+// ignore: lines_longer_than_80_chars
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, lines_longer_than_80_chars, override_on_non_overriding_member, require_trailing_commas, avoid_equals_and_hash_code_on_mutable_classes, duplicate_ignore
 
 part of 'save_note_bloc.dart';
 
@@ -11,7 +12,7 @@ part of 'save_note_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods',);
 
 /// @nodoc
 class _$SaveNoteEventTearOff {
@@ -141,7 +142,7 @@ class _$TitleChangedCopyWithImpl<$Res> extends _$SaveNoteEventCopyWithImpl<$Res>
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ),);
   }
 }
 
@@ -287,7 +288,7 @@ class _$DescriptionChangedCopyWithImpl<$Res>
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ),);
   }
 }
 
@@ -315,7 +316,7 @@ class _$DescriptionChanged implements DescriptionChanged {
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(description));
+      runtimeType, const DeepCollectionEquality().hash(description),);
 
   @JsonKey(ignore: true)
   @override
@@ -434,7 +435,7 @@ class _$ImageChangedCopyWithImpl<$Res> extends _$SaveNoteEventCopyWithImpl<$Res>
           ? _value.imageData
           : imageData // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ),);
   }
 }
 
@@ -765,7 +766,7 @@ class _$SaveNoteStateCopyWithImpl<$Res>
           ? _value.errorMessage
           : errorMessage // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ),);
   }
 }
 
@@ -830,7 +831,7 @@ class __$SaveNoteStateCopyWithImpl<$Res>
           ? _value.errorMessage
           : errorMessage // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ),);
   }
 }
 
@@ -892,7 +893,7 @@ class _$_SaveNoteState extends _SaveNoteState {
       const DeepCollectionEquality().hash(title),
       const DeepCollectionEquality().hash(description),
       const DeepCollectionEquality().hash(imageData),
-      const DeepCollectionEquality().hash(errorMessage));
+      const DeepCollectionEquality().hash(errorMessage),);
 
   @JsonKey(ignore: true)
   @override

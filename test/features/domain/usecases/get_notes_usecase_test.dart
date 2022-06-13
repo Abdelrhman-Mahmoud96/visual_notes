@@ -39,7 +39,7 @@ void main(){
               yield Right<Failure, List<Note>>(tNotes);
         });
 
-        final result =  useCaseGetNote!(NoParams());
+        final result =  useCaseGetNote!(const NoParams());
         await expectLater(result, emits(Right<Failure, List<Note>>(tNotes)));
         verify(() => mockNoteRepository!.getNotesFromDatabase());
         verifyNoMoreInteractions(mockNoteRepository);

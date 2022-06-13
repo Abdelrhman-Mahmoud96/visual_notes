@@ -4,7 +4,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:visual_notes/core/di/injection.dart';
-import 'package:visual_notes/core/routes/route_generator.dart';
 import 'package:visual_notes/features/presentation/home/bloc/home_bloc.dart';
 import 'package:visual_notes/features/presentation/home/widgets/note_filter_options.dart';
 import 'package:visual_notes/features/presentation/home/widgets/note_list_tile.dart';

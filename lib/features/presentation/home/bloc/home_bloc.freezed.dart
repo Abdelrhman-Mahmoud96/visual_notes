@@ -1,6 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, lines_longer_than_80_chars, avoid_equals_and_hash_code_on_mutable_classes, require_trailing_commas
 
 part of 'home_bloc.dart';
 
@@ -11,7 +11,7 @@ part of 'home_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods',);
 
 /// @nodoc
 class _$HomeEventTearOff {
@@ -266,7 +266,7 @@ abstract class GetNotes implements HomeEvent {
 /// @nodoc
 abstract class $NotesReceivedCopyWith<$Res> {
   factory $NotesReceivedCopyWith(
-          NotesReceived value, $Res Function(NotesReceived) then) =
+          NotesReceived value, $Res Function(NotesReceived) then,) =
       _$NotesReceivedCopyWithImpl<$Res>;
   $Res call({Either<Failure, List<Note>> result});
 }
@@ -290,7 +290,7 @@ class _$NotesReceivedCopyWithImpl<$Res> extends _$HomeEventCopyWithImpl<$Res>
           ? _value.result
           : result // ignore: cast_nullable_to_non_nullable
               as Either<Failure, List<Note>>,
-    ));
+    ),);
   }
 }
 
@@ -425,7 +425,7 @@ abstract class NotesReceived implements HomeEvent {
 /// @nodoc
 abstract class $FilterChangedCopyWith<$Res> {
   factory $FilterChangedCopyWith(
-          FilterChanged value, $Res Function(FilterChanged) then) =
+          FilterChanged value, $Res Function(FilterChanged) then,) =
       _$FilterChangedCopyWithImpl<$Res>;
   $Res call({NoteViewFilter? filter});
 }
@@ -449,7 +449,7 @@ class _$FilterChangedCopyWithImpl<$Res> extends _$HomeEventCopyWithImpl<$Res>
           ? _value.filter
           : filter // ignore: cast_nullable_to_non_nullable
               as NoteViewFilter?,
-    ));
+    ),);
   }
 }
 
@@ -606,7 +606,7 @@ class _$DeleteNoteCopyWithImpl<$Res> extends _$HomeEventCopyWithImpl<$Res>
           ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as Note,
-    ));
+    ),);
   }
 }
 
@@ -899,7 +899,7 @@ class _$ClosedToggledCopyWithImpl<$Res> extends _$HomeEventCopyWithImpl<$Res>
           ? _value.isClosed
           : isClosed // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ),);
   }
 }
 
@@ -931,7 +931,7 @@ class _$ClosedToggled implements ClosedToggled {
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(note),
-      const DeepCollectionEquality().hash(isClosed));
+      const DeepCollectionEquality().hash(isClosed),);
 
   @JsonKey(ignore: true)
   @override
@@ -1122,7 +1122,7 @@ class _$HomeStateCopyWithImpl<$Res> implements $HomeStateCopyWith<$Res> {
           ? _value.errorMessage
           : errorMessage // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ),);
   }
 }
 
@@ -1178,7 +1178,7 @@ class __$HomeStateCopyWithImpl<$Res> extends _$HomeStateCopyWithImpl<$Res>
           ? _value.errorMessage
           : errorMessage // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ),);
   }
 }
 
@@ -1236,7 +1236,7 @@ class _$_HomeState extends _HomeState {
       const DeepCollectionEquality().hash(notes),
       const DeepCollectionEquality().hash(noteViewFilter),
       const DeepCollectionEquality().hash(lastDeletedNote),
-      const DeepCollectionEquality().hash(errorMessage));
+      const DeepCollectionEquality().hash(errorMessage),);
 
   @JsonKey(ignore: true)
   @override
