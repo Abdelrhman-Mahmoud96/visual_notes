@@ -42,4 +42,4 @@
 - bloc: https://pub.dev/packages/bloc
 - get_it: https://pub.dev/packages/get_it
 - very good cli: https://pub.dev/packages/very_good_cli
-
+- dartz: https://pub.dev/packages/dartz

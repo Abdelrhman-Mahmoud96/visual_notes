@@ -9,8 +9,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:form_builder_validators/localization/l10n.dart';
+import 'package:visual_notes/core/routes/route_generator.dart';
+import 'package:visual_notes/features/presentation/home/view/home_page.dart';
 import 'package:visual_notes/l10n/l10n.dart';
-import 'package:visual_notes/presentation/home/view/home_page.dart';
 import 'package:visual_notes/theme/note_theme.dart';
 
 
@@ -31,6 +32,7 @@ class AppView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      onGenerateTitle: (context) => 'Visual Notes',
       debugShowCheckedModeBanner: false,
       theme: NoteTheme.light,
       darkTheme: NoteTheme.dark,
@@ -40,6 +42,8 @@ class AppView extends StatelessWidget {
         FormBuilderLocalizations.delegate,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
+      initialRoute: RouteGenerator.homePage,
+      onGenerateRoute: RouteGenerator.generateRoute,
       home: const HomePage(),
     );
   }
