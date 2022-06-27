@@ -7,7 +7,7 @@ import 'package:visual_notes/features/domain/entities/note.dart';
 import 'package:visual_notes/features/domain/repository/note_repository.dart';
 import 'package:visual_notes/features/domain/use_cases/use_case_get_notes.dart';
 
-class MockNoteRepository extends Mock implements NoteRepository{}
+class MockNoteRepository extends Mock implements INoteRepository{}
 class FakeNotes extends Fake implements List<Note>{}
 
 void main(){

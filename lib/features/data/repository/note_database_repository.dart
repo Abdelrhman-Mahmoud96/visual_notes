@@ -7,7 +7,7 @@ import 'package:visual_notes/features/domain/entities/note.dart';
 import 'package:visual_notes/features/domain/repository/note_repository.dart';
 
 
-class NoteDatabaseRepository implements NoteRepository{
+class NoteDatabaseRepository implements INoteRepository{
   NoteDatabaseRepository({required this.database});
 
   final AppDatabase? database;

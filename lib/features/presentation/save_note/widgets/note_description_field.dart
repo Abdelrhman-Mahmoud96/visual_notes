@@ -22,7 +22,7 @@ class NoteDescriptionField extends StatelessWidget {
       key: const Key('saveNoteView_description_formBuilderTextField'),
       initialValue: state.description,
       decoration: InputDecoration(
-        enabled: !state.status.isLoadingOrSuccess,
+        enabled: !state.saveNoteStatus.isLoadingOrSuccess,
         labelText: l10n.saveNoteDescriptionLabel,
         hintText: hintText,
       ),

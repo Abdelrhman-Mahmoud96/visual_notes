@@ -19,7 +19,7 @@ Future<void> initDependencies() async{
 
   getIt..registerLazySingleton<AppDatabase>(() => database)
 
-       ..registerLazySingleton<NoteRepository>(() =>
+       ..registerLazySingleton<INoteRepository>(() =>
            NoteDatabaseRepository(database: getIt()),
        )
 

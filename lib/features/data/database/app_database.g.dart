@@ -1,7 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-// ignore_for_file: library_private_types_in_public_api, lines_longer_than_80_chars, avoid_returning_this, cast_nullable_to_non_nullable
-
 part of 'app_database.dart';
 
 // **************************************************************************
@@ -66,7 +64,7 @@ class _$AppDatabase extends AppDatabase {
   NoteDao? _noteDaoInstance;
 
   Future<sqflite.Database> open(String path, List<Migration> migrations,
-      [Callback? callback,]) async {
+      [Callback? callback]) async {
     final databaseOptions = sqflite.OpenDatabaseOptions(
       version: 1,
       onConfigure: (database) async {
@@ -78,13 +76,13 @@ class _$AppDatabase extends AppDatabase {
       },
       onUpgrade: (database, startVersion, endVersion) async {
         await MigrationAdapter.runMigrations(
-            database, startVersion, endVersion, migrations,);
+            database, startVersion, endVersion, migrations);
 
         await callback?.onUpgrade?.call(database, startVersion, endVersion);
       },
       onCreate: (database, version) async {
         await database.execute(
-            'CREATE TABLE IF NOT EXISTS `notes` (`id` TEXT, `title` TEXT, `imageData` TEXT, `description` TEXT, `date` TEXT NOT NULL, `isClosed` INTEGER NOT NULL, PRIMARY KEY (`id`))',);
+            'CREATE TABLE IF NOT EXISTS `notes` (`id` TEXT, `title` TEXT, `imageData` TEXT, `description` TEXT, `date` TEXT NOT NULL, `isClosed` INTEGER NOT NULL, PRIMARY KEY (`id`))');
 
         await callback?.onCreate?.call(database, version);
       },
@@ -112,7 +110,7 @@ class _$NoteDao extends NoteDao {
                   'date': _dateTypeConverter.encode(item.date),
                   'isClosed': item.isClosed ? 1 : 0
                 },
-            changeListener,),
+            changeListener),
         _noteUpdateAdapter = UpdateAdapter(
             database,
             'notes',
@@ -125,7 +123,7 @@ class _$NoteDao extends NoteDao {
                   'date': _dateTypeConverter.encode(item.date),
                   'isClosed': item.isClosed ? 1 : 0
                 },
-            changeListener,),
+            changeListener),
         _noteDeletionAdapter = DeletionAdapter(
             database,
             'notes',
@@ -138,7 +136,7 @@ class _$NoteDao extends NoteDao {
                   'date': _dateTypeConverter.encode(item.date),
                   'isClosed': item.isClosed ? 1 : 0
                 },
-            changeListener,);
+            changeListener);
 
   final sqflite.DatabaseExecutor database;
 
@@ -161,9 +159,9 @@ class _$NoteDao extends NoteDao {
             imageData: row['imageData'] as String?,
             description: row['description'] as String?,
             date: _dateTypeConverter.decode(row['date'] as String),
-            isClosed: (row['isClosed'] as int) != 0,),
+            isClosed: (row['isClosed'] as int) != 0),
         queryableName: 'notes',
-        isView: false,);
+        isView: false);
   }
 
   @override

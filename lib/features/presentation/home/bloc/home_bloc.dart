@@ -59,7 +59,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     emit(state.copyWith(noteHomeStatus: NoteHomeStatus.loading));
     await _noteStreamSubscription?.cancel();
 
-    useCaseGetNotes(const NoParams())
+    _noteStreamSubscription = useCaseGetNotes(const NoParams())
         .listen((result) {
             add(NotesReceived(result: result));
     });

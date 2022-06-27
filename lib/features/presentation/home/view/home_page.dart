@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:visual_notes/core/di/injection.dart';
 import 'package:visual_notes/features/presentation/home/bloc/home_bloc.dart';
-import 'package:visual_notes/features/presentation/home/widgets/note_filter_options.dart';
+import 'package:visual_notes/features/presentation/home/widgets/note_filter_button.dart';
 import 'package:visual_notes/features/presentation/home/widgets/note_list_tile.dart';
 import 'package:visual_notes/features/presentation/save_note/view/save_note_page.dart';
 import 'package:visual_notes/l10n/l10n.dart';
@@ -34,7 +34,7 @@ class HomeView extends StatelessWidget {
       appBar: AppBar(
         title: Text(l10n.notesAppBarTitle),
         actions: const [
-          NoteFilterOptions()
+          NoteFilterButton()
         ],
       ),
       body: MultiBlocListener(
@@ -65,8 +65,7 @@ class HomeView extends StatelessWidget {
                 final messenger = ScaffoldMessenger.of(context);
                 messenger
                   ..hideCurrentSnackBar()
-                  ..showSnackBar(
-                    SnackBar(
+                  ..showSnackBar(SnackBar(
                       content: Text(
                           l10n.notesHomePageNoteDeletedSnackbar(
                               deletedTodo.title!,
@@ -80,8 +79,7 @@ class HomeView extends StatelessWidget {
                                 .add(const UndoDeletionRequested());
                           },
                       ),
-                  ),
-                );
+                  ),);
               },
           ),
         ],
@@ -116,10 +114,10 @@ class HomeView extends StatelessWidget {
                                 .read<HomeBloc>()
                                 .add(DeleteNote(note: note));
                           },
-                          onTab: (){
+                          onTap: (){
                             Navigator
                                 .of(context)
-                                .push(SaveNotePage.rout(initialNote: note),
+                                .push(SaveNotePage.route(initialNote: note),
                             );
                           },
                         )
@@ -141,7 +139,7 @@ class HomeView extends StatelessWidget {
         onPressed: () {
           Navigator
               .of(context)
-              .push(SaveNotePage.rout(),
+              .push(SaveNotePage.route(),
           );
         },
       ),

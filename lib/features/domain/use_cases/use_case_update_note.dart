@@ -7,10 +7,10 @@ import 'package:visual_notes/features/domain/repository/note_repository.dart';
 
 @dev
 @singleton
-class UseCaseUpdateNote implements UseCase<void, Note>{
+class UseCaseUpdateNote implements IUseCase<void, Note>{
   UseCaseUpdateNote({required this.noteRepository});
 
-  final NoteRepository? noteRepository;
+  final INoteRepository? noteRepository;
 
   @override
   Future<Either<Failure, String>> call(Note prams) async =>

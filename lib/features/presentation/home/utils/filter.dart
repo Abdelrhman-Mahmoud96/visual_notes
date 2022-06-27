@@ -3,7 +3,7 @@ import 'package:visual_notes/features/domain/entities/note.dart';
 enum NoteViewFilter {all, isOpen, isClosed}
 
 extension NoteViewFilterX on NoteViewFilter{
-  bool _apply(Note note){
+  bool apply(Note note){
     switch(this){
       case NoteViewFilter.all:
         return true;
@@ -15,6 +15,6 @@ extension NoteViewFilterX on NoteViewFilter{
   }
 
   Iterable<Note> applyToAll(Iterable<Note> notes) {
-    return notes.where(_apply);
+    return notes.where(apply);
   }
 }

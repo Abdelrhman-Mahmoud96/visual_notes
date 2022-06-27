@@ -108,13 +108,13 @@ void main() {
           bloc.add(const NoteSubmitted()),
       expect: () => const [
         SaveNoteState(
-          status: SaveNoteStatus.loading,
+          saveNoteStatus: SaveNoteStatus.loading,
           title: 'title',
           description: 'description',
           imageData: 'imageData',
         ),
         SaveNoteState(
-          status: SaveNoteStatus.success,
+          saveNoteStatus: SaveNoteStatus.success,
           title: 'title',
           description: 'description',
           imageData: 'imageData',
@@ -149,13 +149,13 @@ void main() {
           bloc.add(const NoteSubmitted()),
       expect: () => const [
         SaveNoteState(
-          status: SaveNoteStatus.loading,
+          saveNoteStatus: SaveNoteStatus.loading,
           title: 'title',
           description: 'description',
           imageData: 'imageData',
         ),
         SaveNoteState(
-          status: SaveNoteStatus.failure,
+          saveNoteStatus: SaveNoteStatus.failure,
           title: 'title',
           description: 'description',
           imageData: 'imageData',
@@ -182,14 +182,14 @@ void main() {
           bloc.add(const NoteSubmitted()),
       expect: () => [
         SaveNoteState(
-          status: SaveNoteStatus.loading,
+          saveNoteStatus: SaveNoteStatus.loading,
           initialNote: tNote,
           title: 'title',
           description: 'description',
           imageData: 'imageData',
         ),
         SaveNoteState(
-          status: SaveNoteStatus.success,
+          saveNoteStatus: SaveNoteStatus.success,
           initialNote: tNote,
           title: 'title',
           description: 'description',
@@ -226,14 +226,14 @@ void main() {
           bloc.add(const NoteSubmitted()),
       expect: () => [
         SaveNoteState(
-          status: SaveNoteStatus.loading,
+          saveNoteStatus: SaveNoteStatus.loading,
           initialNote: tNote,
           title: 'title',
           description: 'description',
           imageData: 'imageData',
         ),
         SaveNoteState(
-          status: SaveNoteStatus.failure,
+          saveNoteStatus: SaveNoteStatus.failure,
           initialNote: tNote,
           title: 'title',
           description: 'description',

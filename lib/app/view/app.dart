@@ -7,7 +7,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:form_builder_validators/localization/l10n.dart';
 import 'package:visual_notes/core/routes/route_generator.dart';
 import 'package:visual_notes/features/presentation/home/view/home_page.dart';

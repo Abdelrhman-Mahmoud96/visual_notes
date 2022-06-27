@@ -7,9 +7,9 @@ import 'package:visual_notes/features/domain/repository/note_repository.dart';
 
 @dev
 @singleton
-class UseCaseDeleteNote implements UseCase<void, Note>{
+class UseCaseDeleteNote implements IUseCase<void, Note>{
   UseCaseDeleteNote({required this.noteRepository});
-  final NoteRepository? noteRepository;
+  final INoteRepository? noteRepository;
 
   @override
   Future<Either<Failure,String>> call(Note prams) async =>

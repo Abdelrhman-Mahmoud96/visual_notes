@@ -6,10 +6,10 @@ import 'package:visual_notes/features/domain/entities/note.dart';
 import 'package:visual_notes/features/domain/repository/note_repository.dart';
 
 
-class UseCaseGetNotes implements UseCaseWithStream<List<Note>, NoParams>{
+class UseCaseGetNotes implements IUseCaseWithStream<List<Note>, NoParams>{
   UseCaseGetNotes({required this.noteRepository});
 
-  final NoteRepository? noteRepository;
+  final INoteRepository? noteRepository;
 
   @override
   Stream<Either<Failure,List<Note>>> call(NoParams noParams) async*{

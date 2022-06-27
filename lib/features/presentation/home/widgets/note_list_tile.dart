@@ -9,13 +9,13 @@ class NoteListTile extends StatelessWidget {
     Key? key,
     required this.note,
     this.onDismissed,
-    this.onTab,
+    this.onTap,
     this.onToggleClosed,
   }) : super(key: key);
 
   final Note? note;
   final DismissDirectionCallback? onDismissed;
-  final VoidCallback? onTab;
+  final VoidCallback? onTap;
   final ValueChanged<bool>? onToggleClosed;
 
   @override
@@ -34,7 +34,7 @@ class NoteListTile extends StatelessWidget {
         child: const Icon(Icons.delete, color: NoteColors.visualPrimaryWhite,),
       ),
       child: ListTile(
-        onTap: onTab,
+        onTap: onTap,
         title: Text(
           note!.title!,
           maxLines: 1,
@@ -58,7 +58,7 @@ class NoteListTile extends StatelessWidget {
               ? null
               : (value) => onToggleClosed!(value!),
         ),
-        trailing: onTab == null
+        trailing: onTap == null
             ? null
             : const Icon(Icons.chevron_right),
       ),

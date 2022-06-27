@@ -46,7 +46,7 @@ class SaveNoteBloc extends Bloc<SaveNoteEvent, SaveNoteState> {
 
   Future<void> _onNoteSubmitted(NoteSubmitted event,
       Emitter<SaveNoteState> emit,) async{
-    emit(state.copyWith(status: SaveNoteStatus.loading));
+    emit(state.copyWith(saveNoteStatus: SaveNoteStatus.loading));
 
     final newNote = (state.initialNote ?? Note(date: DateTime.now())).copyWith(
       title: state.title,
@@ -58,20 +58,20 @@ class SaveNoteBloc extends Bloc<SaveNoteEvent, SaveNoteState> {
         final result = await useCaseAddNote!(newNote);
         result.fold(
                 (failure) =>
-                    emit(state.copyWith(status: SaveNoteStatus.failure,
+                    emit(state.copyWith(saveNoteStatus: SaveNoteStatus.failure,
                         errorMessage: failure.message,),),
                 (success) =>
-                    emit(state.copyWith(status: SaveNoteStatus.success)),
-        );
+                    emit(state.copyWith(saveNoteStatus: SaveNoteStatus.success))
+        ,);
       }
       else{
         final result = await useCaseUpdateNote!(newNote);
         result.fold(
               (failure) =>
-              emit(state.copyWith(status: SaveNoteStatus.failure,
+              emit(state.copyWith(saveNoteStatus: SaveNoteStatus.failure,
                 errorMessage: failure.message,),),
               (success) =>
-              emit(state.copyWith(status: SaveNoteStatus.success)),
+              emit(state.copyWith(saveNoteStatus: SaveNoteStatus.success)),
         );
       }
   }

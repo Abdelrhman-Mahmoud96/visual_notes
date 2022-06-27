@@ -1,7 +1,6 @@
-// ignore: lines_longer_than_80_chars
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, lines_longer_than_80_chars, override_on_non_overriding_member, require_trailing_commas, avoid_equals_and_hash_code_on_mutable_classes, duplicate_ignore
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'save_note_bloc.dart';
 
@@ -12,7 +11,7 @@ part of 'save_note_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods',);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 class _$SaveNoteEventTearOff {
@@ -142,7 +141,7 @@ class _$TitleChangedCopyWithImpl<$Res> extends _$SaveNoteEventCopyWithImpl<$Res>
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-    ),);
+    ));
   }
 }
 
@@ -288,7 +287,7 @@ class _$DescriptionChangedCopyWithImpl<$Res>
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-    ),);
+    ));
   }
 }
 
@@ -316,7 +315,7 @@ class _$DescriptionChanged implements DescriptionChanged {
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(description),);
+      runtimeType, const DeepCollectionEquality().hash(description));
 
   @JsonKey(ignore: true)
   @override
@@ -435,7 +434,7 @@ class _$ImageChangedCopyWithImpl<$Res> extends _$SaveNoteEventCopyWithImpl<$Res>
           ? _value.imageData
           : imageData // ignore: cast_nullable_to_non_nullable
               as String,
-    ),);
+    ));
   }
 }
 
@@ -675,14 +674,14 @@ class _$SaveNoteStateTearOff {
   const _$SaveNoteStateTearOff();
 
   _SaveNoteState call(
-      {SaveNoteStatus status = SaveNoteStatus.initial,
+      {SaveNoteStatus saveNoteStatus = SaveNoteStatus.initial,
       Note? initialNote,
       String? title = '',
       String? description = '',
       String? imageData = '',
       String? errorMessage}) {
     return _SaveNoteState(
-      status: status,
+      saveNoteStatus: saveNoteStatus,
       initialNote: initialNote,
       title: title,
       description: description,
@@ -697,7 +696,7 @@ const $SaveNoteState = _$SaveNoteStateTearOff();
 
 /// @nodoc
 mixin _$SaveNoteState {
-  SaveNoteStatus get status => throw _privateConstructorUsedError;
+  SaveNoteStatus get saveNoteStatus => throw _privateConstructorUsedError;
   Note? get initialNote => throw _privateConstructorUsedError;
   String? get title => throw _privateConstructorUsedError;
   String? get description => throw _privateConstructorUsedError;
@@ -715,7 +714,7 @@ abstract class $SaveNoteStateCopyWith<$Res> {
           SaveNoteState value, $Res Function(SaveNoteState) then) =
       _$SaveNoteStateCopyWithImpl<$Res>;
   $Res call(
-      {SaveNoteStatus status,
+      {SaveNoteStatus saveNoteStatus,
       Note? initialNote,
       String? title,
       String? description,
@@ -734,7 +733,7 @@ class _$SaveNoteStateCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? status = freezed,
+    Object? saveNoteStatus = freezed,
     Object? initialNote = freezed,
     Object? title = freezed,
     Object? description = freezed,
@@ -742,9 +741,9 @@ class _$SaveNoteStateCopyWithImpl<$Res>
     Object? errorMessage = freezed,
   }) {
     return _then(_value.copyWith(
-      status: status == freezed
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
+      saveNoteStatus: saveNoteStatus == freezed
+          ? _value.saveNoteStatus
+          : saveNoteStatus // ignore: cast_nullable_to_non_nullable
               as SaveNoteStatus,
       initialNote: initialNote == freezed
           ? _value.initialNote
@@ -766,7 +765,7 @@ class _$SaveNoteStateCopyWithImpl<$Res>
           ? _value.errorMessage
           : errorMessage // ignore: cast_nullable_to_non_nullable
               as String?,
-    ),);
+    ));
   }
 }
 
@@ -778,7 +777,7 @@ abstract class _$SaveNoteStateCopyWith<$Res>
       __$SaveNoteStateCopyWithImpl<$Res>;
   @override
   $Res call(
-      {SaveNoteStatus status,
+      {SaveNoteStatus saveNoteStatus,
       Note? initialNote,
       String? title,
       String? description,
@@ -799,7 +798,7 @@ class __$SaveNoteStateCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? status = freezed,
+    Object? saveNoteStatus = freezed,
     Object? initialNote = freezed,
     Object? title = freezed,
     Object? description = freezed,
@@ -807,9 +806,9 @@ class __$SaveNoteStateCopyWithImpl<$Res>
     Object? errorMessage = freezed,
   }) {
     return _then(_SaveNoteState(
-      status: status == freezed
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
+      saveNoteStatus: saveNoteStatus == freezed
+          ? _value.saveNoteStatus
+          : saveNoteStatus // ignore: cast_nullable_to_non_nullable
               as SaveNoteStatus,
       initialNote: initialNote == freezed
           ? _value.initialNote
@@ -831,7 +830,7 @@ class __$SaveNoteStateCopyWithImpl<$Res>
           ? _value.errorMessage
           : errorMessage // ignore: cast_nullable_to_non_nullable
               as String?,
-    ),);
+    ));
   }
 }
 
@@ -839,7 +838,7 @@ class __$SaveNoteStateCopyWithImpl<$Res>
 
 class _$_SaveNoteState extends _SaveNoteState {
   const _$_SaveNoteState(
-      {this.status = SaveNoteStatus.initial,
+      {this.saveNoteStatus = SaveNoteStatus.initial,
       this.initialNote,
       this.title = '',
       this.description = '',
@@ -849,7 +848,7 @@ class _$_SaveNoteState extends _SaveNoteState {
 
   @JsonKey()
   @override
-  final SaveNoteStatus status;
+  final SaveNoteStatus saveNoteStatus;
   @override
   final Note? initialNote;
   @JsonKey()
@@ -866,7 +865,7 @@ class _$_SaveNoteState extends _SaveNoteState {
 
   @override
   String toString() {
-    return 'SaveNoteState(status: $status, initialNote: $initialNote, title: $title, description: $description, imageData: $imageData, errorMessage: $errorMessage)';
+    return 'SaveNoteState(saveNoteStatus: $saveNoteStatus, initialNote: $initialNote, title: $title, description: $description, imageData: $imageData, errorMessage: $errorMessage)';
   }
 
   @override
@@ -874,7 +873,8 @@ class _$_SaveNoteState extends _SaveNoteState {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _SaveNoteState &&
-            const DeepCollectionEquality().equals(other.status, status) &&
+            const DeepCollectionEquality()
+                .equals(other.saveNoteStatus, saveNoteStatus) &&
             const DeepCollectionEquality()
                 .equals(other.initialNote, initialNote) &&
             const DeepCollectionEquality().equals(other.title, title) &&
@@ -888,12 +888,12 @@ class _$_SaveNoteState extends _SaveNoteState {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(status),
+      const DeepCollectionEquality().hash(saveNoteStatus),
       const DeepCollectionEquality().hash(initialNote),
       const DeepCollectionEquality().hash(title),
       const DeepCollectionEquality().hash(description),
       const DeepCollectionEquality().hash(imageData),
-      const DeepCollectionEquality().hash(errorMessage),);
+      const DeepCollectionEquality().hash(errorMessage));
 
   @JsonKey(ignore: true)
   @override
@@ -903,7 +903,7 @@ class _$_SaveNoteState extends _SaveNoteState {
 
 abstract class _SaveNoteState extends SaveNoteState {
   const factory _SaveNoteState(
-      {SaveNoteStatus status,
+      {SaveNoteStatus saveNoteStatus,
       Note? initialNote,
       String? title,
       String? description,
@@ -912,7 +912,7 @@ abstract class _SaveNoteState extends SaveNoteState {
   const _SaveNoteState._() : super._();
 
   @override
-  SaveNoteStatus get status;
+  SaveNoteStatus get saveNoteStatus;
   @override
   Note? get initialNote;
   @override

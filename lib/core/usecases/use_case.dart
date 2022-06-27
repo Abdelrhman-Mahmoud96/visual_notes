@@ -3,8 +3,8 @@
 import 'package:dartz/dartz.dart';
 import 'package:visual_notes/core/errors/failure.dart';
 
-abstract class UseCase<Type, Prams>{
-  Future<Either<Failure, Type>> call(Prams params);
+abstract class IUseCase<Type, Params>{
+  Future<Either<Failure, Type>> call(Params params);
 }
 
 // we would make a constant constructor to ensure that we will get

@@ -4,8 +4,8 @@ import 'package:visual_notes/features/presentation/home/bloc/home_bloc.dart';
 import 'package:visual_notes/features/presentation/home/utils/filter.dart';
 import 'package:visual_notes/l10n/l10n.dart';
 
-class NoteFilterOptions extends StatelessWidget {
-  const NoteFilterOptions({Key? key}) : super(key: key);
+class NoteFilterButton extends StatelessWidget {
+  const NoteFilterButton({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

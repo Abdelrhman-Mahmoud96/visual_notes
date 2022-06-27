@@ -19,7 +19,7 @@ import 'package:visual_notes/l10n/l10n.dart';
 class SaveNotePage extends StatelessWidget {
   const SaveNotePage({Key? key}) : super(key: key);
 
-  static Route<void> rout({Note? initialNote}){
+  static Route<void> route({Note? initialNote}){
     return MaterialPageRoute(
       fullscreenDialog: true,
       builder: (context) => BlocProvider(
@@ -34,8 +34,8 @@ class SaveNotePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocListener<SaveNoteBloc, SaveNoteState>(
       listenWhen: (previous, current) =>
-        previous.status != current.status &&
-        current.status == SaveNoteStatus.success,
+        previous.saveNoteStatus != current.saveNoteStatus &&
+        current.saveNoteStatus == SaveNoteStatus.success,
       listener: (context, state) => Navigator.of(context).pop(),
       child: SaveNoteView(),
     );
@@ -51,9 +51,11 @@ class SaveNoteView extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = context.l10n;
     final status = context.select((SaveNoteBloc bloc) =>
-      bloc.state.status,);
+      bloc.state.saveNoteStatus,);
+
     final isNewNote = context.select((SaveNoteBloc bloc) =>
       bloc.state.isNewNote,);
+
     final theme = Theme.of(context);
     final floatingActionButtonTheme = theme.floatingActionButtonTheme;
     final fabBackgroundColor = floatingActionButtonTheme.backgroundColor ??
@@ -136,7 +138,7 @@ class SaveNoteView extends StatelessWidget {
                 context
                     .read<SaveNoteBloc>()
                     .add(const NoteSubmitted());
-            } 
+            }
             else {
               ScaffoldMessenger.of(context)
                 ..hideCurrentSnackBar()

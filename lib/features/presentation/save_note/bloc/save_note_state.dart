@@ -5,7 +5,7 @@ enum SaveNoteStatus{initial, loading, success, failure}
 @freezed
 class SaveNoteState with _$SaveNoteState {
   const factory SaveNoteState({
-    @Default(SaveNoteStatus.initial) SaveNoteStatus status,
+    @Default(SaveNoteStatus.initial) SaveNoteStatus saveNoteStatus,
     Note? initialNote,
     @Default('') String? title,
     @Default('') String? description,
